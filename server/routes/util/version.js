@@ -5,6 +5,8 @@ module.exports = {
   method: 'GET',
   path: '/_version',
   async handler() {
-    return Util.getVersion();
+    return {
+      version: Util.getVersion(),
+    };
   },
 };

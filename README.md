@@ -6,7 +6,7 @@ Starter repo for a Hapi + MySQL stack
 
 ```
 npm install
-npm start
+npm run dev # run development server w/ hot reloading
 ```
 
 ## Secrets

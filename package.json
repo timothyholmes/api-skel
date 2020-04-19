@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "npx supervisor index.js",
     "test": "test"
   },
   "author": "Tim Holmes",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2"
+    "eslint-plugin-import": "^2.20.2",
+    "node-supervisor": "^1.0.2"
   }
 }
