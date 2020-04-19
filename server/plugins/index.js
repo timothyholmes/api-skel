@@ -1,3 +1,5 @@
 
 // @TODO expose the plugins to the server
-// server access logging, mysql, auth, debug logger?
+// access logging, mysql, auth, healthcheck, debug logging
+
+module.exports = null;

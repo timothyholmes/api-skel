@@ -1,10 +1,10 @@
 
-const Package = require('../../../package.json');
+const Util = require('../../service/util');
 
 module.exports = {
   method: 'GET',
   path: '/_version',
   async handler() {
-    return { version: Package.version };
+    return Util.getVersion();
   },
 };
