@@ -13,6 +13,10 @@ npm run dev # run development server w/ hot reloading
 
 Secrets are loaded from `./.env`
 
+## Documentation
+
+OpenAPI docs are available at `GET /documentation`
+
 ## Starting MySQL
 
 ```

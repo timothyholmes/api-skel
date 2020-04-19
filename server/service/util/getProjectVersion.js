@@ -1,6 +1,6 @@
 
 const Package = require('../../../package.json');
 
-module.exports = function getVersion() {
+module.exports = function getProjectVersion() {
   return Package.version;
 };

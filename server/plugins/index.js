@@ -1,5 +1,22 @@
 
 // @TODO expose the plugins to the server
-// access logging, mysql, auth, healthcheck, debug logging, documentation
+// access logging, mysql, auth, healthcheck, debug logging
 
-module.exports = null;
+const Inert = require('@hapi/inert');
+const Vision = require('@hapi/vision');
+const HapiSwagger = require('hapi-swagger');
+const UtilService = require('../service/util');
+
+module.exports = [
+  Inert,
+  Vision,
+  {
+    plugin: HapiSwagger,
+    options: {
+      info: {
+        title: UtilService.getProjectName(),
+        version: UtilService.getProjectVersion(),
+      },
+    },
+  },
+];

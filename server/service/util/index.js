@@ -5,6 +5,7 @@ class UtilService {
   }
 }
 
-UtilService.getVersion = require('./getVersion');
+UtilService.getProjectVersion = require('./getProjectVersion');
+UtilService.getProjectName = require('./getProjectName');
 
 module.exports = UtilService;
